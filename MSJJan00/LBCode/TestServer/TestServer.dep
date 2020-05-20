@@ -1,0 +1,23 @@
+# Microsoft Developer Studio Generated Dependency File, included by TestServer.mak
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\Test.cpp : \
+	".\Test.h"\
+	".\TestServer.h"\
+	
+
+.\TestServer.cpp : \
+	".\Test.h"\
+	".\TestServer.h"\
+	".\TestServer_i.c"\
+	
+
+.\TestServer.rc : \
+	".\Resource.h"\
+	".\Test.rgs"\
+	".\TestServer.rgs"\
+	".\TestServer.tlb"\
+	

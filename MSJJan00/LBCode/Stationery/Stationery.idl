@@ -1,0 +1,43 @@
+///////////////////////////////////////////////////////////////////////
+//
+//  Stationery.idl - Copyright 1999, Tim Ewald / DevelopMentor
+//  
+
+// Stationery.idl : IDL source for Stationery.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Stationery.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(5E7F74C0-E165-11D2-B72C-00A0CC212296),	
+		helpstring("IEnvelope Interface"),
+		pointer_default(unique)
+	]
+	interface IEnvelope : IUnknown
+	{
+		[propput, helpstring("A write-only property!")] HRESULT Letter([in] IUnknown *pUnk);
+	};
+
+[
+	uuid(5E7F74B4-E165-11D2-B72C-00A0CC212296),
+	version(1.0),
+	helpstring("Stationery 1.0 Type Library")
+]
+library StationeryLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(5E7F74C1-E165-11D2-B72C-00A0CC212296),
+		helpstring("Envelope Class")
+	]
+	coclass Envelope
+	{
+		[default] interface IEnvelope;
+	};
+};

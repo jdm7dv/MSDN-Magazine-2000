@@ -1,0 +1,26 @@
+HKCR
+{
+	MethodTimeHook.Loader.1 = s 'Loader Class'
+	{
+		CLSID = s '{233108A3-E3CD-11D2-8117-00E09801FDBE}'
+	}
+	MethodTimeHook.Loader = s 'Loader Class'
+	{
+		CLSID = s '{233108A3-E3CD-11D2-8117-00E09801FDBE}'
+		CurVer = s 'MethodTimeHook.Loader.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {233108A3-E3CD-11D2-8117-00E09801FDBE} = s 'Loader Class'
+		{
+            val AppID = s '{19E42130-E619-11d2-B72D-00A0CC212296}'
+			ProgID = s 'MethodTimeHook.Loader.1'
+			VersionIndependentProgID = s 'MethodTimeHook.Loader'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{23310896-E3CD-11D2-8117-00E09801FDBE}'
+		}
+	}
+}

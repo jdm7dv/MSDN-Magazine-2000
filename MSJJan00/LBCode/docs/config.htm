@@ -1,0 +1,60 @@
+<H1>Configuration</H1>
+
+<ol>
+<li>Configure Server(s)
+<ol type = a>
+<li>Run bin\setupserver.cmd.
+<li>Deploy the Test Class in TestServer.DLL in MTS (or at least mark it to
+support surrogate activation in OLEVIEW.
+</ol>
+<br>
+<li>Configure Client(s)
+<ol type = a>
+<li>Run bin\setupclient.cmd.
+</ol>
+<br>
+<li>Configure a Routing Server.
+<ol type = a>
+<li>Run bin\setuproutingserver.cmd.
+<li>Edit bin\configroutingserver.reg to specify the desired algorithm.
+There are four algorithms provided:
+<ul>
+<li>LoadBalancingAlgorithms.Random
+<li>LoadBalancingAlgorithms.RoundRobin
+<li>LoadBalancingAlgorithms.MethodTiming
+<li>LoadBalancingAlgorithms.CPULoad
+</ul>
+<li>Edit bin\configroutingserver.reg to specify a set of servers
+(instead of heffalump and northpole), the routing server should NOT be
+included on this list.
+<li>Run "configroutingserver.reg".
+<li>Use the Service Control Panel to configure the LoadBalancer service
+to run as a discriminated account which can create objects on the set of
+servers.
+<li>Run "configclasses.reg" to add the LoadBalancer's AppID to the
+registered Test Class.
+<li>Copy PDH.DLL to a directory on the path. This DLL is used by the CPU load
+algorithm and is needed to load the LoadBalancingAlgorithms DLL. PDH.DLL is
+included in the Platform SDK (\mssdk\bin\winnt\pdh.dll).
+<li>Start the LoadBalancer service.
+</ol>
+<br>
+<li>Test the system
+<ol type = a>
+<li>Run TestClient.EXE passing it a number of iterations as a command line argument,
+e.g., TestClient 10.
+<li>Watch TestClient output.
+<li>Watch object count in MTS Explorer on each server.
+</ol>
+<br>
+<li>Troubleshooting
+<ol type = a>
+<li>Use OLEVIEW on the routing server to test creation of instances of the Test Class on each
+of the server machines.
+<li>Use OLEVIEW on the routing server to test creation of  an instance of the MethodTiming algorithm,
+this should instantiate an instance of the Loader class on each server machine (running in
+DLLHOST.EXE).
+<li>If the service won't start or object creation fails, make sure service is configured to
+run as an account other than System.
+</ol>
+</ol>

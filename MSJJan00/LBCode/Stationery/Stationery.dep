@@ -1,0 +1,25 @@
+# Microsoft Developer Studio Generated Dependency File, included by Stationery.mak
+
+.\Envelope.cpp : \
+	".\Envelope.h"\
+	".\Stationery.h"\
+	
+
+.\Stationery.cpp : \
+	".\Envelope.h"\
+	".\Stationery.h"\
+	".\Stationery_i.c"\
+	
+
+.\Stationery.rc : \
+	".\Envelope.rgs"\
+	".\Resource.h"\
+	".\Stationery.tlb"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\..\..\..\mssdk\include\propidl.h"\
+	"..\..\..\..\..\..\..\mssdk\include\winefs.h"\
+	".\StdAfx.h"\
+	

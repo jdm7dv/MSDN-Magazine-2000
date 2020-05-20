@@ -1,0 +1,64 @@
+///////////////////////////////////////////////////////////////////////
+//
+//  LoadBalancingAlgorithms.idl - Copyright 1999, Tim Ewald / DevelopMentor
+//  
+
+// LoadBalancingAlgorithms.idl : IDL source for LoadBalancingAlgorithms.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (LoadBalancingAlgorithms.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+import "algorithm.idl";
+
+[
+	uuid(3C406C51-E3B1-11D2-8117-00E09801FDBE),
+	version(1.0),
+	helpstring("LoadBalancingAlgorithms 1.0 Type Library")
+]
+library LOADBALANCINGALGORITHMSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(3C406C5E-E3B1-11D2-8117-00E09801FDBE),
+		helpstring("Random Class")
+	]
+	coclass Random
+	{
+		[default] interface ILoadBalancingAlgorithm;
+		interface IHosts;
+	};
+
+	[
+		uuid(86AADFB2-E612-11D2-B72D-00A0CC212296),
+		helpstring("RoundRobin Class")
+	]
+	coclass RoundRobin
+	{
+		[default] interface ILoadBalancingAlgorithm;
+		interface IHosts;
+	};
+	[
+		uuid(86AADFB9-E612-11D2-B72D-00A0CC212296),
+		helpstring("MethodTiming Class")
+	]
+	coclass MethodTiming
+	{
+		[default] interface ILoadBalancingAlgorithm;
+		interface IHosts;
+	};
+	[
+		uuid(DD135284-E924-11D2-B72F-00A0CC212296),
+		helpstring("CPULoad Class")
+	]
+	coclass CPULoad
+	{
+		[default] interface ILoadBalancingAlgorithm;
+		interface IHosts;
+	};
+};

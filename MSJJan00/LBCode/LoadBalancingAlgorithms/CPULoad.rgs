@@ -1,0 +1,25 @@
+HKCR
+{
+	LoadBalancingAlgorithms.CPULoad.1 = s 'CPULoad Class'
+	{
+		CLSID = s '{DD135284-E924-11D2-B72F-00A0CC212296}'
+	}
+	LoadBalancingAlgorithms.CPULoad = s 'CPULoad Class'
+	{
+		CLSID = s '{DD135284-E924-11D2-B72F-00A0CC212296}'
+		CurVer = s 'LoadBalancingAlgorithms.CPULoad.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DD135284-E924-11D2-B72F-00A0CC212296} = s 'CPULoad Class'
+		{
+			ProgID = s 'LoadBalancingAlgorithms.CPULoad.1'
+			VersionIndependentProgID = s 'LoadBalancingAlgorithms.CPULoad'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			'TypeLib' = s '{3C406C51-E3B1-11D2-8117-00E09801FDBE}'
+		}
+	}
+}

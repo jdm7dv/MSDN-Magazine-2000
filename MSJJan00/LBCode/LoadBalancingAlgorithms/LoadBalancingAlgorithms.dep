@@ -1,0 +1,51 @@
+# Microsoft Developer Studio Generated Dependency File, included by LoadBalancingAlgorithms.mak
+
+.\CPULoad.cpp : \
+	"..\include\algorithm.h"\
+	".\CPULoad.h"\
+	".\LoadBalancingAlgorithms.h"\
+	
+
+.\LoadBalancingAlgorithms.cpp : \
+	"..\include\algorithm.h"\
+	".\CPULoad.h"\
+	".\LoadBalancingAlgorithms.h"\
+	".\LoadBalancingAlgorithms_i.c"\
+	".\MethodTiming.h"\
+	".\Random.h"\
+	".\RoundRobin.h"\
+	
+
+.\LoadBalancingAlgorithms.rc : \
+	".\CPULoad.rgs"\
+	".\LoadBalancingAlgorithms.rgs"\
+	".\LoadBalancingAlgorithms.tlb"\
+	".\MethodTiming.rgs"\
+	".\Random.rgs"\
+	".\Resource.h"\
+	".\RoundRobin.rgs"\
+	
+
+.\MethodTiming.cpp : \
+	"..\include\algorithm.h"\
+	"..\MethodTimeHook\MethodTimeHook.h"\
+	"..\MethodTimeHook\MethodTimeHook_i.c"\
+	".\LoadBalancingAlgorithms.h"\
+	".\MethodTiming.h"\
+	
+
+.\Random.cpp : \
+	"..\include\algorithm.h"\
+	".\LoadBalancingAlgorithms.h"\
+	".\Random.h"\
+	
+
+.\RoundRobin.cpp : \
+	"..\include\algorithm.h"\
+	".\LoadBalancingAlgorithms.h"\
+	".\RoundRobin.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

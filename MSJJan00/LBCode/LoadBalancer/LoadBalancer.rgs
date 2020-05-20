@@ -1,0 +1,39 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{5E7F74A4-E165-11D2-B72C-00A0CC212296} = s 'LoadBalancer'
+		'LoadBalancer.EXE'
+		{
+			val AppID = s {5E7F74A4-E165-11D2-B72C-00A0CC212296}
+		}
+	}
+    NoRemove 'Component Categories'
+    {
+        {9FDC5DE0-E180-11d2-B72C-00A0CC212296}
+        {
+            val 409 = s 'Load Balanced Classes'
+        }
+        {9FDC5DE1-E180-11d2-B72C-00A0CC212296}
+        {
+            val 409 = s 'Load Balancing Algorithms'
+        }
+    }
+}
+
+HKLM
+{
+    NoRemove Software
+    {
+        NoRemove DevelopMentor
+        {
+            ForceRemove LoadBalancing
+            {
+                RoutingServer
+                {
+                    val 'Default Algorithm' = s ''
+                }
+            }
+        }
+    }
+}

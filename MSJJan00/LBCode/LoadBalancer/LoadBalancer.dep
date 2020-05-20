@@ -1,0 +1,36 @@
+# Microsoft Developer Studio Generated Dependency File, included by LoadBalancer.mak
+
+.\Admin.cpp : \
+	".\Admin.h"\
+	".\LoadBalancer.h"\
+	".\Resource.h"\
+	
+
+.\LoadBalancer.cpp : \
+	"..\include\algorithm.h"\
+	"..\include\algorithm_i.c"\
+	"..\include\loadbalancedcategory.h"\
+	"..\LoadBalancingAlgorithms\LoadBalancingAlgorithms.h"\
+	"..\LoadBalancingAlgorithms\LoadBalancingAlgorithms_i.c"\
+	"..\Stationery\Stationery.h"\
+	"..\Stationery\Stationery_i.c"\
+	".\Admin.h"\
+	".\ClassObjectShim.h"\
+	".\LoadBalancer.h"\
+	".\LoadBalancer_i.c"\
+	".\Resource.h"\
+	
+
+.\LoadBalancer.rc : \
+	".\Admin.rgs"\
+	".\LoadBalancer.rgs"\
+	".\LoadBalancer.tlb"\
+	".\Resource.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\..\..\..\mssdk\include\propidl.h"\
+	"..\..\..\..\..\..\..\mssdk\include\winefs.h"\
+	".\StdAfx.h"\
+	

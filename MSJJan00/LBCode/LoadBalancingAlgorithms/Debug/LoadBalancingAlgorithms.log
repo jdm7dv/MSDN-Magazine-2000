@@ -1,0 +1,70 @@
+﻿  Processing .\LoadBalancingAlgorithms.idl
+  LoadBalancingAlgorithms.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl
+  objidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypesbase.idl
+  wtypesbase.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\servprov.idl
+  servprov.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\msxml.idl
+  msxml.idl
+  Processing ..\include\algorithm.idl
+  algorithm.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.acf
+  oaidl.acf
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.acf
+  ocidl.acf
+cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  StdAfx.cpp
+cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  RoundRobin.cpp
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\roundrobin.cpp(65): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(117): note: see declaration of 'wcscpy'
+  Random.cpp
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\random.cpp(59): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(117): note: see declaration of 'wcscpy'
+  MethodTiming.cpp
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\methodtiming.cpp(70): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(117): note: see declaration of 'wcscpy'
+  LoadBalancingAlgorithms.cpp
+  CPULoad.cpp
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\cpuload.cpp(77): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(117): note: see declaration of 'wcscpy'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\cpuload.cpp(80): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(117): note: see declaration of 'wcscpy'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\cpuload.cpp(81): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(97): note: see declaration of 'wcscat'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\cpuload.cpp(83): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(97): note: see declaration of 'wcscat'
+  Generating Code...
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\cpuload.cpp(88): warning C4700: uninitialized local variable 'i' used
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\methodtiming.cpp(84): warning C4700: uninitialized local variable 'i' used
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\random.cpp(62): warning C4700: uninitialized local variable 'i' used
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancingalgorithms\roundrobin.cpp(68): warning C4700: uninitialized local variable 'i' used
+CPULoad.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+.\LoadBalancingAlgorithms.def : warning LNK4222: exported symbol 'DllCanUnloadNow' should not be assigned an ordinal
+.\LoadBalancingAlgorithms.def : warning LNK4222: exported symbol 'DllGetClassObject' should not be assigned an ordinal
+.\LoadBalancingAlgorithms.def : warning LNK4222: exported symbol 'DllRegisterServer' should not be assigned an ordinal
+.\LoadBalancingAlgorithms.def : warning LNK4222: exported symbol 'DllUnregisterServer' should not be assigned an ordinal
+     Creating library .\Debug\LoadBalancingAlgorithms.lib and object .\Debug\LoadBalancingAlgorithms.exp
+  LoadBalancingAlgorithms.vcxproj -> D:\WRK\MSDN\2000\MSJJan00\LBCode\LoadBalancingAlgorithms\.\Debug\LoadBalancingAlgorithms.dll
+  Performing registration
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(255,5): error MSB3075: The command "regsvr32 /s /c "D:\WRK\MSDN\2000\MSJJan00\LBCode\LoadBalancingAlgorithms\.\Debug\LoadBalancingAlgorithms.dll" 
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(255,5): error MSB3075: echo regsvr32 exec. time > ".\Debug\regsvr32.trg" 
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(255,5): error MSB3075: :VCEnd" exited with code 5. Please verify that you have sufficient rights to run this command.

@@ -1,0 +1,32 @@
+HKCR
+{
+	LoadBalancingAlgorithms.RoundRobin.1 = s 'RoundRobin Algorithm'
+	{
+		CLSID = s '{86AADFB2-E612-11D2-B72D-00A0CC212296}'
+	}
+	LoadBalancingAlgorithms.RoundRobin = s 'RoundRobin Algorithm'
+	{
+		CLSID = s '{86AADFB2-E612-11D2-B72D-00A0CC212296}'
+		CurVer = s 'LoadBalancingAlgorithms.RoundRobin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {86AADFB2-E612-11D2-B72D-00A0CC212296} = s 'RoundRobin Algorithm'
+		{
+			ProgID = s 'LoadBalancingAlgorithms.RoundRobin.1'
+			VersionIndependentProgID = s 'LoadBalancingAlgorithms.RoundRobin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+            'Implemented Categories'
+            {
+                {9FDC5DE1-E180-11d2-B72C-00A0CC212296}
+                {
+                }
+            }
+			'TypeLib' = s '{3C406C51-E3B1-11D2-8117-00E09801FDBE}'
+		}
+	}
+}

@@ -1,0 +1,14 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{19E42130-E619-11d2-B72D-00A0CC212296} = s 'MethodTimeHook'
+        {
+            val DllSurrogate = s ''
+        }
+		'MethodTimeHook'
+		{
+			val AppID = s {19E42130-E619-11d2-B72D-00A0CC212296}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////////////////
+//
+//  Algorithm.idl - Copyright 1999, Tim Ewald / DevelopMentor
+//  
+
+
+import "objidl.idl";
+
+[
+  uuid(741F3750-E3B1-11d2-8117-00E09801FDBE), object
+]
+interface ILoadBalancingAlgorithm : IUnknown
+{
+    HRESULT CreateInstance([in] REFCLSID rclsid,
+                           [in] REFIID riid, [out, iid_is(riid)] void **ppv);
+}
+
+[
+  uuid(6345D6A0-E6DC-11d2-B72D-00A0CC212296), object
+]
+interface IHosts : IUnknown
+{
+    HRESULT SetHosts([in] long nCount, [in, size_is(nCount)] LPOLESTR *rgwszHosts);
+}

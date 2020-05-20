@@ -1,0 +1,25 @@
+HKCR
+{
+	Stationery.Envelope.1 = s 'Envelope Class'
+	{
+		CLSID = s '{5E7F74C1-E165-11D2-B72C-00A0CC212296}'
+	}
+	Stationery.Envelope = s 'Envelope Class'
+	{
+		CLSID = s '{5E7F74C1-E165-11D2-B72C-00A0CC212296}'
+		CurVer = s 'Stationery.Envelope.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5E7F74C1-E165-11D2-B72C-00A0CC212296} = s 'Envelope Class'
+		{
+			ProgID = s 'Stationery.Envelope.1'
+			VersionIndependentProgID = s 'Stationery.Envelope'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{5E7F74B4-E165-11D2-B72C-00A0CC212296}'
+		}
+	}
+}

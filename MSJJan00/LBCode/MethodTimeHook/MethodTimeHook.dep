@@ -1,0 +1,31 @@
+# Microsoft Developer Studio Generated Dependency File, included by MethodTimeHook.mak
+
+.\Hook.cpp : \
+	".\Hook.h"\
+	
+
+.\Loader.cpp : \
+	".\Loader.h"\
+	".\MethodTimeHook.h"\
+	
+
+.\MethodTimeHook.cpp : \
+	".\Hook.h"\
+	".\Loader.h"\
+	".\MethodTimeHook.h"\
+	".\MethodTimeHook_i.c"\
+	
+
+.\MethodTimeHook.rc : \
+	".\Loader.rgs"\
+	".\MethodTimeHook.rgs"\
+	".\MethodTimeHook.tlb"\
+	".\Resource.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\..\..\..\mssdk\include\propidl.h"\
+	"..\..\..\..\..\..\..\mssdk\include\winefs.h"\
+	".\StdAfx.h"\
+	

@@ -1,0 +1,9 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\DevelopMentor\LoadBalancing\RoutingServer]
+"Default Algorithm"="LoadBalancingAlgorithms.Random"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\DevelopMentor\LoadBalancing\RoutingServer\Heffalump]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\DevelopMentor\LoadBalancing\RoutingServer\Northpole]
+

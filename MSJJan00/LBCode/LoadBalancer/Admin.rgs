@@ -1,0 +1,23 @@
+HKCR
+{
+	LoadBalancer.Admin.1 = s 'Admin Class'
+	{
+		CLSID = s '{5E7F74C6-E165-11D2-B72C-00A0CC212296}'
+	}
+	LoadBalancer.Admin = s 'Admin Class'
+	{
+		CLSID = s '{5E7F74C6-E165-11D2-B72C-00A0CC212296}'
+		CurVer = s 'LoadBalancer.Admin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5E7F74C6-E165-11D2-B72C-00A0CC212296} = s 'Admin Class'
+		{
+			ProgID = s 'LoadBalancer.Admin.1'
+			VersionIndependentProgID = s 'LoadBalancer.Admin'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{5E7F74A4-E165-11D2-B72C-00A0CC212296}'
+			'TypeLib' = s '{5E7F74A3-E165-11D2-B72C-00A0CC212296}'
+		}
+	}
+}

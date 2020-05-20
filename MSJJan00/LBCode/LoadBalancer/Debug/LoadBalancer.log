@@ -1,0 +1,58 @@
+﻿  Processing .\LoadBalancer.idl
+  LoadBalancer.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl
+  objidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypesbase.idl
+  wtypesbase.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\servprov.idl
+  servprov.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\msxml.idl
+  msxml.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.acf
+  oaidl.acf
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.acf
+  ocidl.acf
+cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  StdAfx.cpp
+cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  LoadBalancer.cpp
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(76): warning C4996: 'ATL::CRegKey::SetValue': CRegKey::SetValue(TCHAR *value, TCHAR *valueName) has been superseded by CRegKey::SetStringValue and CRegKey::SetMultiStringValue
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\atlmfc\include\atlbase.h(6201): note: see declaration of 'ATL::CRegKey::SetValue'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(77): warning C4996: 'ATL::CRegKey::SetValue': CRegKey::SetValue(TCHAR *value, TCHAR *valueName) has been superseded by CRegKey::SetStringValue and CRegKey::SetMultiStringValue
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\atlmfc\include\atlbase.h(6201): note: see declaration of 'ATL::CRegKey::SetValue'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(255): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(403): warning C4996: 'ATL::CRegKey::QueryValue': CRegKey::QueryValue(TCHAR *value, TCHAR *valueName) has been superseded by CRegKey::QueryStringValue and CRegKey::QueryMultiStringValue
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\atlmfc\include\atlbase.h(5919): note: see declaration of 'ATL::CRegKey::QueryValue'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(413): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(915): note: see declaration of 'mbstowcs'
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(459): warning C4018: '<': signed/unsigned mismatch
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(573): warning C4996: 'ATL::CRegKey::QueryValue': CRegKey::QueryValue(TCHAR *value, TCHAR *valueName) has been superseded by CRegKey::QueryStringValue and CRegKey::QueryMultiStringValue
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\atlmfc\include\atlbase.h(5919): note: see declaration of 'ATL::CRegKey::QueryValue'
+  Admin.cpp
+  Generating Code...
+d:\wrk\msdn\2000\msjjan00\lbcode\loadbalancer\loadbalancer.cpp(476): warning C4700: uninitialized local variable 'i' used
+Admin.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  LoadBalancer.vcxproj -> D:\WRK\MSDN\2000\MSJJan00\LBCode\LoadBalancer\.\Debug\LoadBalancer.exe
+  Performing registration
+  Server registration done! 
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(255,5): error MSB3073: The command ""D:\WRK\MSDN\2000\MSJJan00\LBCode\LoadBalancer\.\Debug\LoadBalancer.exe" /RegServer 
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(255,5): error MSB3073: echo regsvr32 exec. time > ".\Debug\regsvr32.trg" 
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(255,5): error MSB3073: echo Server registration done! 
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(255,5): error MSB3073: :VCEnd" exited with code 2.

@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////////////
+//
+//  MethodTimeHook.idl - Copyright 1999, Tim Ewald / DevelopMentor
+//  
+
+// MethodTimeHook.idl : IDL source for MethodTimeHook.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MethodTimeHook.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(233108A2-E3CD-11D2-8117-00E09801FDBE),
+	
+		helpstring("ILoader Interface"),
+		pointer_default(unique)
+	]
+	interface ILoader : IUnknown
+	{
+		[helpstring("method GetAverageMethodTime")] HRESULT GetAverageMethodTime([out, retval] long *pnAvg);
+	};
+
+[
+	uuid(23310896-E3CD-11D2-8117-00E09801FDBE),
+	version(1.0),
+	helpstring("MethodTimeHook 1.0 Type Library")
+]
+library METHODTIMEHOOKLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(233108A3-E3CD-11D2-8117-00E09801FDBE),
+		helpstring("Loader Class")
+	]
+	coclass Loader
+	{
+		[default] interface ILoader;
+	};
+};

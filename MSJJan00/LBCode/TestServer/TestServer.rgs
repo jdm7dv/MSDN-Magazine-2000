@@ -1,0 +1,10 @@
+HKCR
+{
+    NoRemove 'Component Categories'
+    {
+        {9FDC5DE0-E180-11d2-B72C-00A0CC212296}
+        {
+            val 409 = s 'Load Balanced Classes'
+        }
+    }
+}

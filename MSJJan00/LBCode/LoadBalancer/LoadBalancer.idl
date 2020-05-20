@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////////
+//
+//  LoadBalancer.idl - Copyright 1999, Tim Ewald / DevelopMentor
+//  
+
+// This file will be processed by the MIDL tool to
+// produce the type library (LoadBalancer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(5E7F74C5-E165-11D2-B72C-00A0CC212296),
+	
+		helpstring("IAdmin Interface"),
+		pointer_default(unique)
+	]
+	interface IAdmin : IUnknown
+	{
+	};
+
+[
+	uuid(5E7F74A3-E165-11D2-B72C-00A0CC212296),
+	version(1.0),
+	helpstring("LoadBalancer 1.0 Type Library")
+]
+library LOADBALANCERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(5E7F74C6-E165-11D2-B72C-00A0CC212296),
+		helpstring("Admin Class")
+	]
+	coclass Admin
+	{
+		[default] interface IAdmin;
+	};
+};

@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////////////
+//
+//  TestServer.idl - Copyright 1999, Tim Ewald / DevelopMentor
+//  
+
+// TestServer.idl : IDL source for TestServer.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TestServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(3C406C7A-E3B1-11D2-8117-00E09801FDBE),
+		dual,
+		helpstring("ITest Interface"),
+		pointer_default(unique)
+	]
+	interface ITest : IDispatch
+	{
+		[id(1), helpstring("method GetHostName")] HRESULT GetHostName([out, retval] BSTR *pbstrHostName);
+	};
+
+[
+	uuid(3C406C6E-E3B1-11D2-8117-00E09801FDBE),
+	version(1.0),
+	helpstring("TestServer 1.0 Type Library")
+]
+library TESTSERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(3C406C7B-E3B1-11D2-8117-00E09801FDBE),
+		helpstring("Test Class")
+	]
+	coclass Test
+	{
+		[default] interface ITest;
+	};
+};
