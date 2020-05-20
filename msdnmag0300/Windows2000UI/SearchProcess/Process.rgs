@@ -1,0 +1,48 @@
+HKCR
+{
+	Process.Process.1 = s 'Process Class'
+	{
+		CLSID = s '{977DA8D2-41D5-11D2-BC00-AC6805C10E27}'
+	}
+	Process.Process = s 'Process Class'
+	{
+		CurVer = s 'Process.Process.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {977DA8D2-41D5-11D2-BC00-AC6805C10E27} = s 'Process Class'
+		{
+			ProgID = s 'Process.Process.1'
+			VersionIndependentProgID = s 'Process.Process'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}
+
+HKLM 
+{ Software 
+  { Microsoft 
+    { Windows 
+	  { CurrentVersion 
+	    { Explorer 
+		  { FindExtensions 
+		    { Static
+		      { FindProcess = s '{977DA8D2-41D5-11D2-BC00-AC6805C10E27}'
+		        {
+				  0 = s 'Find &Process...'
+				  {
+					DefaultIcon = s '%MODULE%,0'
+				  }
+				}
+	          }
+            }
+          }
+        }
+      } 
+    }
+  }
+}

@@ -1,0 +1,68 @@
+HKCR
+{
+	ExeExt.ExeTip.1 = s 'ExeTip Class'
+	{
+		CLSID = s '{300FF0F1-7662-11D3-B17C-00C0DFE39736}'
+	}
+	ExeExt.ExeTip = s 'ExeTip Class'
+	{
+		CLSID = s '{300FF0F1-7662-11D3-B17C-00C0DFE39736}'
+		CurVer = s 'ExeExt.ExeTip.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {300FF0F1-7662-11D3-B17C-00C0DFE39736} = s 'ExeTip Class'
+		{
+			ProgID = s 'ExeExt.ExeTip.1'
+			VersionIndependentProgID = s 'ExeExt.ExeTip'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{300FF0E1-7662-11D3-B17C-00C0DFE39736}'
+		}
+	}
+
+	.exe
+	{
+		ShellEx
+		{	
+			ForceRemove '{00021500-0000-0000-C000-000000000046}' = s '{300FF0F1-7662-11D3-B17C-00C0DFE39736}'
+		}
+	}
+
+	.dll
+	{
+		ShellEx
+		{	
+			ForceRemove '{00021500-0000-0000-C000-000000000046}' = s '{300FF0F1-7662-11D3-B17C-00C0DFE39736}'
+		}
+	}
+}
+
+
+HKLM 
+{ 
+  Software 
+  { 
+    Microsoft 
+	{ 
+	   Windows 
+	    { 
+		  CurrentVersion 
+		    {
+			  Shell Extensions
+			    {
+				  Approved
+				  {
+					ForceRemove '{300FF0F1-7662-11D3-B17C-00C0DFE39736}' = s 'Extension for required DLLs'
+				  }
+		        }
+
+			}
+		}
+	}
+  }
+}
+

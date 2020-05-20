@@ -1,0 +1,38 @@
+// BmpExt.idl : IDL source for BmpExt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (BmpExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(7BEA1DD0-1EB9-11D3-B17C-00C0DFE39736),
+		dual,
+		helpstring("IBmpTip Interface"),
+		pointer_default(unique)
+	]
+	interface IBmpTip : IDispatch
+	{
+	};
+
+[
+	uuid(7BEA1DC4-1EB9-11D3-B17C-00C0DFE39736),
+	version(1.0),
+	helpstring("BmpExt 1.0 Type Library")
+]
+library BMPEXTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(7BEA1DD1-1EB9-11D3-B17C-00C0DFE39736),
+		helpstring("BmpTip Class")
+	]
+	coclass BmpTip
+	{
+		[default] interface IBmpTip;
+	};
+};

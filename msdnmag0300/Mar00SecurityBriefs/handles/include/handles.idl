@@ -1,0 +1,24 @@
+import "objidl.idl";
+
+interface IHandleTest;
+interface IHandleTestSite;
+
+cpp_quote("const DWORD HTO_DETAILEDOUTPUT    = 0x80000000;")
+
+[uuid(30E99A21-2A78-11d3-B561-00105A0FDD58), object]
+interface IHandleTestSite : IUnknown
+{
+	HRESULT SetEmptyDacl(); // denys everyone all access
+	HRESULT SetNULLDacl();  // grants everyone all access
+}
+
+[uuid(30E99A20-2A78-11d3-B561-00105A0FDD58), object]
+interface IHandleTest : IUnknown
+{
+	HRESULT SetHandle( [in] long handle );
+	HRESULT SetName( [in, string] const OLECHAR* psz );
+	HRESULT RunTest( [in] IHandleTestSite* pSite,
+					 [in] long nObjectType,
+					 [in] DWORD grfOptions,
+					 [in] ISequentialStream* pstm );
+}

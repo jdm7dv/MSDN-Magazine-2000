@@ -1,0 +1,38 @@
+// ProcFind.idl : IDL source for ProcFind.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ProcFind.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(977DA8D0-41D5-11D2-BC00-AC6805C10E27),
+		dual,
+		helpstring("IProcess Interface"),
+		pointer_default(unique)
+	]
+	interface IProcess : IDispatch
+	{
+	};
+[
+	uuid(977DA8C3-41D5-11D2-BC00-AC6805C10E27),
+	version(1.0),
+	helpstring("ProcFind 1.0 Type Library")
+]
+library PROCFINDLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(977DA8D2-41D5-11D2-BC00-AC6805C10E27),
+		helpstring("Process Class")
+	]
+	coclass Process
+	{
+		[default] interface IProcess;
+	};
+};

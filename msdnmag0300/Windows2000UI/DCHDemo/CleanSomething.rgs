@@ -1,0 +1,50 @@
+HKCR
+{
+	DCHDemo.CleanSomething.1 = s 'CleanSomething Class'
+	{
+		CLSID = s '{E61151A9-E694-40FF-A350-BAD54C39672E}'
+	}
+	DCHDemo.CleanSomething = s 'CleanSomething Class'
+	{
+		CLSID = s '{E61151A9-E694-40FF-A350-BAD54C39672E}'
+		CurVer = s 'DCHDemo.CleanSomething.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E61151A9-E694-40FF-A350-BAD54C39672E} = s 'CleanSomething Class'
+		{
+			ProgID = s 'DCHDemo.CleanSomething.1'
+			VersionIndependentProgID = s 'DCHDemo.CleanSomething'
+			ForceRemove 'Programmable'
+			ForceRemove 'DefaultIcon' = s '%MODULE%,0'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{C2DAFB18-C704-4233-85F6-E833F65F347C}'
+		}
+	}
+}
+
+HKLM
+{
+  Software
+  {
+    Microsoft
+	{
+      Windows
+	  {
+        CurrentVersion
+		{
+          Explorer
+		  {
+            NoRemove VolumeCaches
+			{
+				ForceRemove DCHDemo = s '{E61151A9-E694-40FF-A350-BAD54C39672E}'
+			}
+		  }
+		}
+      }
+    }              
+  }
+}

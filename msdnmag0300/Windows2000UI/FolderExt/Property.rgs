@@ -1,0 +1,74 @@
+HKCR
+{
+	FolderExt.Property.1 = s 'Property Class'
+	{
+		CLSID = s '{1F8F343A-1DE0-4B26-97C9-18A39FFC9880}'
+	}
+	FolderExt.Property = s 'Property Class'
+	{
+		CLSID = s '{1F8F343A-1DE0-4B26-97C9-18A39FFC9880}'
+		CurVer = s 'FolderExt.Property.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1F8F343A-1DE0-4B26-97C9-18A39FFC9880} = s 'Property Class'
+		{
+			ProgID = s 'FolderExt.Property.1'
+			VersionIndependentProgID = s 'FolderExt.Property'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{DABDF9F8-044D-47F9-8328-FA2F14D7D167}'
+		}
+	}
+
+    NoRemove Folder
+    {
+      NoRemove Shellex
+      {
+        NoRemove PropertySheetHandlers
+        {
+          ForceRemove {1F8F343A-1DE0-4B26-97C9-18A39FFC9880}
+        }
+      }
+    }
+
+    NoRemove Folder
+    {
+      NoRemove Shellex
+      {
+        NoRemove ContextMenuHandlers
+        {
+          ForceRemove {1F8F343A-1DE0-4B26-97C9-18A39FFC9880}
+        }
+      }
+    }
+
+}
+
+
+HKLM 
+{ 
+  Software 
+  { 
+    Microsoft 
+	{ 
+	   Windows 
+	    { 
+		  CurrentVersion 
+		    {
+			  Shell Extensions
+			    {
+				  Approved
+				  {
+					{1F8F343A-1DE0-4B26-97C9-18A39FFC9880} = s 'Folder Customization Property Page'
+				  }
+		        }
+
+			}
+		}
+	}
+  }
+}

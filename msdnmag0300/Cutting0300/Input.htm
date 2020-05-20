@@ -1,0 +1,56 @@
+<HTML>
+<LINK rel="stylesheet" href="styles.css">
+<HEAD>
+<TITLE>Employee Info</TITLE>
+</HEAD>
+
+<BODY>
+<script language="JavaScript" src="http://expoware/_ScriptLibrary/rs.htm"></script>
+<script language="JavaScript">RSEnableRemoteScripting("http://expoware/_ScriptLibrary");</script>
+
+<table border=0 cellpadding=0 width=100%>
+<td width=20%><img src="mind.gif"></img></td>
+<td class="heading" width=75%>&nbsp;Employee Info Finder<br>
+<span class=subhead>brought to you by <big>Remote Scripting</big> and <big>DHTML</big></span></td>
+</table>
+
+<form name=MyForm>
+Enter the last name of the employee you want to search:
+<br><input type=text name="txtEmpName" size=40> 
+<input type=button name=btnExecute style="width=150"
+       value="Show" 
+       onclick="execCall(txtEmpName.value)">
+</form>
+
+<SCRIPT LANGUAGE="javascript">
+
+	var serverURL = "http://expoware";
+        var pageURL   = "/mind/rs/frame/server/EmpData.asp";
+	var aspObject;
+
+	function refreshPage(co)
+	{
+	    if (co.status == 0) {
+        	    // stores the string returned by the remote method invoked 
+	            strText = co.return_value;   
+	            top.info.location = "info.asp?info=" + escape(strText);
+	    }
+        }
+ 
+	function errHandler(co)
+	{
+	    if (co.status != 0) {
+		top.log.location = "log.asp?info=" + escape(co.message);
+            }
+         }
+
+	function execCall(name)
+	{
+	    //top.log.errLog.value = "";
+            var co = RSExecute(serverURL+pageURL, "GetEmployeeInfo", name, 
+                               refreshPage, errHandler, "top.log.errLog");
+	}
+</SCRIPT>
+
+</BODY>
+</HTML>

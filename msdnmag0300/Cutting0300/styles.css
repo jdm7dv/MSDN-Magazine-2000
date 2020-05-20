@@ -1,0 +1,43 @@
+.heading {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  font-family: verdana;
+  font-Size: 24;
+  font-Weight: 700;
+}
+.subhead {
+  font-family: verdana;
+  font-Size: 13;
+  color: yellow;
+}
+.normal {
+  font-family: verdana;
+  font-Size: 12;
+}
+.sender {
+  font-Size: "8pt";
+  width=20%;
+}
+.subject {
+  font-Size: "8pt";
+  width=35%;
+}
+.received {
+  font-Size: "8pt";
+  width=25%;
+}
+.address {
+  font-Size: "8pt";
+  width=25%;
+}
+.header {
+  background-color: "black";
+  color: "white";
+  font-Size: "10pt";
+}
+.globTab {
+  font-Family: "verdana";
+  font-Size: "8pt";
+  cellpadding: 4;
+}

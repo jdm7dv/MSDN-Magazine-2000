@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<CLIENT>
+	<COMPANYNAME>Widget Corporation</COMPANYNAME>
+	<PEOPLE>
+		<PERSON>
+			<NAME>Joe Bigwig</NAME>
+			<TITLE>President</TITLE>
+			<CERTIFICATION>CA</CERTIFICATION>
+			<DEGREE>Master</DEGREE>
+			<PUBLICATION>Wall Street Journal</PUBLICATION>
+			<PEOPLE>
+				<PERSON>
+					<NAME>Jane Finance</NAME>
+					<TITLE>Chief Financial Officer</TITLE>
+					<CERTIFICATION>CA</CERTIFICATION>
+					<DEGREE>Bachelor</DEGREE>
+					<DEGREE>Master</DEGREE>
+					<PUBLICATION>USA Today</PUBLICATION>
+				</PERSON>
+				<PERSON>
+					<NAME>Tom Tech</NAME>
+					<TITLE>Technology Officer</TITLE>
+					<DEGREE>Bachelor</DEGREE>
+					<PUBLICATION>MIND</PUBLICATION>
+					<PEOPLE>
+						<PERSON>
+							<NAME>Bill Onliane </NAME>
+							<TITLE>Director of eCommerce</TITLE>
+							<DEGREE>Doctorate</DEGREE>
+							<CERTIFICATION>MCSE</CERTIFICATION>
+							<PEOPLE>
+								<PERSON>
+									<NAME>Mary Hillor</NAME>
+									<TITLE>Senior Architect</TITLE>
+									<DEGREE>Bachelor</DEGREE>
+									<CERTIFICATION>MCSD</CERTIFICATION>
+									<PUBLICATION>MIND</PUBLICATION>
+									<PEOPLE>
+										<PERSON>
+											<NAME>Stu Blane</NAME>
+											<TITLE>Middle-Tier Specialist</TITLE>
+											<CERTIFICATION>MCSD</CERTIFICATION>
+											<CERTIFICATION>MCSE</CERTIFICATION>
+										</PERSON>
+										<PERSON>
+											<NAME>Sad Guy</NAME>
+											<TITLE>Database Administrator</TITLE>
+											<CERTIFICATION>SQL Guru</CERTIFICATION>
+										</PERSON>
+									</PEOPLE>
+								</PERSON>
+								<PERSON>
+									<NAME>John Smith</NAME>
+									<TITLE>Project Manager</TITLE>
+									<CERTIFICATION>MSF</CERTIFICATION>
+									<PEOPLE/>
+								</PERSON>
+							</PEOPLE>
+						</PERSON>
+					</PEOPLE>
+				</PERSON>
+			</PEOPLE>
+		</PERSON>
+	</PEOPLE>
+</CLIENT>

@@ -1,0 +1,38 @@
+// BmpCol.idl : IDL source for BmpCol.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (BmpCol.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(D1A87B75-BB28-42F8-9BC0-C55B827474CD),
+		dual,
+		helpstring("IBmpColInfo Interface"),
+		pointer_default(unique)
+	]
+	interface IBmpColInfo : IDispatch
+	{
+	};
+
+[
+	uuid(43031770-D60B-41BF-BA70-6B92A87D28FC),
+	version(1.0),
+	helpstring("BmpCol 1.0 Type Library")
+]
+library BMPCOLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(9A4BA3D8-6805-498F-9561-2685A1E30484),
+		helpstring("BmpColInfo Class")
+	]
+	coclass BmpColInfo
+	{
+		[default] interface IBmpColInfo;
+	};
+};

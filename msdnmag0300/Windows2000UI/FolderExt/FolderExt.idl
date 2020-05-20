@@ -1,0 +1,38 @@
+// FolderExt.idl : IDL source for FolderExt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FolderExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(7AB61C14-F59F-4A67-A69F-4678FF6B3A20),
+		dual,
+		helpstring("IProperty Interface"),
+		pointer_default(unique)
+	]
+	interface IProperty : IDispatch
+	{
+	};
+
+[
+	uuid(DABDF9F8-044D-47F9-8328-FA2F14D7D167),
+	version(1.0),
+	helpstring("FolderExt 1.0 Type Library")
+]
+library FOLDEREXTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(1F8F343A-1DE0-4B26-97C9-18A39FFC9880),
+		helpstring("Property Class")
+	]
+	coclass Property
+	{
+		[default] interface IProperty;
+	};
+};

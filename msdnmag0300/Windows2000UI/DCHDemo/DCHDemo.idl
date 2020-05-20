@@ -1,0 +1,38 @@
+// DCHDemo.idl : IDL source for DCHDemo.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DCHDemo.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(E9243790-C1C3-41B6-9F02-98380EF595ED),
+		dual,
+		helpstring("ICleanSomething Interface"),
+		pointer_default(unique)
+	]
+	interface ICleanSomething : IDispatch
+	{
+	};
+
+[
+	uuid(C2DAFB18-C704-4233-85F6-E833F65F347C),
+	version(1.0),
+	helpstring("DCHDemo 1.0 Type Library")
+]
+library DCHDEMOLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(E61151A9-E694-40FF-A350-BAD54C39672E),
+		helpstring("CleanSomething Class")
+	]
+	coclass CleanSomething
+	{
+		[default] interface ICleanSomething;
+	};
+};

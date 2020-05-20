@@ -1,0 +1,38 @@
+// ExeExt.idl : IDL source for ExeExt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ExeExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(300FF0ED-7662-11D3-B17C-00C0DFE39736),
+		dual,
+		helpstring("IExeTip Interface"),
+		pointer_default(unique)
+	]
+	interface IExeTip : IDispatch
+	{
+	};
+
+[
+	uuid(300FF0E1-7662-11D3-B17C-00C0DFE39736),
+	version(1.0),
+	helpstring("ExeExt 1.0 Type Library")
+]
+library EXEEXTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(300FF0F1-7662-11D3-B17C-00C0DFE39736),
+		helpstring("ExeTip Class")
+	]
+	coclass ExeTip
+	{
+		[default] interface IExeTip;
+	};
+};

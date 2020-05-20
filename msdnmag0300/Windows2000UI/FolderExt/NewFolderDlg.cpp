@@ -1,0 +1,6 @@
+// NewFolderDlg.cpp : Implementation of CNewFolderDlg
+#include "stdafx.h"
+#include "NewFolderDlg.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// CNewFolderDlg

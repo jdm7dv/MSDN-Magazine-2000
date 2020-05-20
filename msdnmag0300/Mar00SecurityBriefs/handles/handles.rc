@@ -1,0 +1,152 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+100 DIALOG DISCARDABLE  0, 0, 498, 242
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Handle Security"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Object Type",IDC_STATIC,7,7,78,179,WS_GROUP
+    CONTROL         "Process",201,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    15,18,56,10
+    CONTROL         "Thread",202,"Button",BS_AUTORADIOBUTTON,15,29,56,10
+    CONTROL         "Mutex",203,"Button",BS_AUTORADIOBUTTON,15,40,56,10
+    CONTROL         "Semaphore",204,"Button",BS_AUTORADIOBUTTON,15,51,56,10
+    CONTROL         "Event",205,"Button",BS_AUTORADIOBUTTON,15,62,56,10
+    CONTROL         "Section",206,"Button",BS_AUTORADIOBUTTON,15,73,56,10
+    CONTROL         "Job",207,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,15,
+                    84,56,10
+    CONTROL         "Waitable Timer",208,"Button",BS_AUTORADIOBUTTON,15,95,
+                    62,10
+    CONTROL         "Token",209,"Button",BS_AUTORADIOBUTTON,15,106,56,10
+    CONTROL         "File",210,"Button",BS_AUTORADIOBUTTON,15,117,56,10
+    CONTROL         "Named Pipe",211,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,15,128,56,10
+    CONTROL         "Registry Key",212,"Button",BS_AUTORADIOBUTTON,15,139,56,
+                    10
+    CONTROL         "Window Station",213,"Button",BS_AUTORADIOBUTTON,15,150,
+                    65,10
+    CONTROL         "All",200,"Button",BS_AUTORADIOBUTTON,15,162,56,10
+    GROUPBOX        "Interprocess Communication",IDC_STATIC,91,7,126,98
+    CONTROL         "Cross Process",IDC_CROSSPROCESS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,101,20,61,10
+    CONTROL         "Cross Window Station",IDC_CROSSWINSTA,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    101,32,85,10
+    CONTROL         "Alternate Credentials",IDC_ALTCRED,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,101,44,81,10
+    RTEXT           "&Authority:",IDC_STATIC,103,58,35,10
+    EDITTEXT        IDC_AUTHORITY,145,57,63,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "&Principal:",IDC_STATIC,103,73,35,10
+    EDITTEXT        IDC_PRINCIPAL,145,72,63,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Pa&ssword:",IDC_STATIC,103,88,35,10
+    EDITTEXT        IDC_PASSWORD,145,87,63,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Handle Transmission",IDC_STATIC,91,107,126,79,WS_GROUP
+    CONTROL         "Direct",401,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,98,
+                    118,112,10
+    CONTROL         "Named Object",402,"Button",BS_AUTORADIOBUTTON,98,129,
+                    112,10
+    CONTROL         "DuplicateHandle",403,"Button",BS_AUTORADIOBUTTON,98,140,
+                    112,10
+    CONTROL         "Inheritance",404,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,98,151,112,10
+    CONTROL         "Inheritance of Dup'd Handle",405,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,98,161,112,10
+    CONTROL         "All",400,"Button",BS_AUTORADIOBUTTON,98,172,112,10
+    GROUPBOX        "Misc",IDC_STATIC,7,188,210,26
+    CONTROL         "Auditing",IDC_AUDITING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,199,41,10
+    CONTROL         "Detailed Output",IDC_DETAILEDOUTPUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,144,199,65,10
+    EDITTEXT        IDC_OUTPUT,225,7,266,228,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL | WS_GROUP | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "Run Tests",IDOK,86,221,53,14,WS_GROUP
+    PUSHBUTTON      "Close",IDCANCEL,-100,50,10,10,NOT WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    100, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

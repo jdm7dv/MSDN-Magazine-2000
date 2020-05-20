@@ -1,0 +1,66 @@
+HKCR
+{
+	BmpCol.BmpColInfo.1 = s 'BmpColInfo Class'
+	{
+		CLSID = s '{9A4BA3D8-6805-498F-9561-2685A1E30484}'
+	}
+	BmpCol.BmpColInfo = s 'BmpColInfo Class'
+	{
+		CLSID = s '{9A4BA3D8-6805-498F-9561-2685A1E30484}'
+		CurVer = s 'BmpCol.BmpColInfo.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9A4BA3D8-6805-498F-9561-2685A1E30484} = s 'BmpColInfo Class'
+		{
+			ProgID = s 'BmpCol.BmpColInfo.1'
+			VersionIndependentProgID = s 'BmpCol.BmpColInfo'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{43031770-D60B-41BF-BA70-6B92A87D28FC}'
+		}
+	}
+}
+
+
+HKCR
+{
+	NoRemove Folder
+	{
+		NoRemove Shellex
+		{
+			NoRemove ColumnHandlers
+			{
+				ForceRemove {9A4BA3D8-6805-498F-9561-2685A1E30484} = s 'Bitmap Info Column Provider'
+			}
+        }
+	}
+}
+
+
+HKLM 
+{ 
+  Software 
+  { 
+    Microsoft 
+	{ 
+	   Windows 
+	    { 
+		  CurrentVersion 
+		    {
+			  Shell Extensions
+			    {
+				  Approved
+				  {
+					{9A4BA3D8-6805-498F-9561-2685A1E30484} = s 'Bitmap Info Column Provider'
+				  }
+		        }
+
+			}
+		}
+	}
+  }
+}

@@ -1,0 +1,7 @@
+LIBRARY         ENUMPROC
+
+EXPORTS
+   EnumProcess				@1
+   EnumProcessToTreeView	@2
+   GetExeBinaryFormat		@3
+   ProcessDlg				@4

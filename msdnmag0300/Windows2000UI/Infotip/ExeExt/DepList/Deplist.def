@@ -1,0 +1,3 @@
+EXPORTS
+	GetImportTableSize		@2		
+	GetImportTable			@3

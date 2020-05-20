@@ -1,0 +1,11 @@
+;dllregshex.def : Declares the module parameters for the DLL.
+
+LIBRARY      NTS_SHEX
+DESCRIPTION  'DLL Registerer Shell Extension'
+
+EXPORTS
+	DllRegisterServer	PRIVATE ; COM server registration
+	DllUnregisterServer	PRIVATE ; COM server deregistration
+    DllCanUnloadNow		PRIVATE 
+    DllGetClassObject	PRIVATE 
+

@@ -1,0 +1,77 @@
+<Headlines>
+   <Headline ID="100001" HotStory="y">
+      <Title>Fed expected to Raise Rates Tuesday</Title>
+      <Subtitle>But will that be enough to keep the central bank quiet for the rest of 1999?</Subtitle>
+      <Abstract>Last month Federal Reserve chairman Alan Greenspan told Congress that the central bank "will have to act promptly and forcefully" to tamp down any signs of cost or price pressures.</Abstract>
+      <StoryLink>http://www.msnbc.com/news/303592.asp</StoryLink>
+      <PhotoLink>http://www.msnbc.com/news/427333.jpg</PhotoLink>
+      <Category>Financial</Category>
+      <DateTimePosted Day="23" Month="8" Year="99" Hour="14" Minute="42" Second="21"/>
+      <Author>
+         <Name>Kathleen Hays</Name>
+         <Affiliation>CNBC</Affiliation>
+      </Author>
+   </Headline>
+   <Headline ID="100002" HotStory="y">
+      <Title>Quake survivors face second threat </Title>
+      <Subtitle>Crushed victims now must deal with possible kidney failure </Subtitle>
+      <Abstract>IZMIT, Turkey, Aug 23 - Those lucky enough to be pulled out of the quake wreckage in Turkey are not out of danger. Earthquakes continue to kill after people have been rescued, because of a surprising medical challenge facing doctors known as "crush syndrome." </Abstract>
+      <StoryLink>http://www.msnbc.com/msn/303758.asp</StoryLink>
+      <Category>World</Category>
+      <DateTimePosted Day="22" Month="8" Year="99" Hour="12" Minute="45" Second="58"/>
+      <Author>
+         <Name>Dr. Bob Arnot</Name>
+         <Affiliation>NBC News correspondent</Affiliation>
+      </Author>
+   </Headline>
+   <Headline ID="100003" HotStory="n">
+      <Title>Idea of Beatty bid appeals to some </Title>
+      <Subtitle>Democrats abuzz as actor hints at presidential candidacy </Subtitle>
+      <Abstract>Aug. 23 - Actor-director Warren Beatty has stirred a buzz among some Democrats by musing that he might launch a left-leaning bid for the Democratic presidential nomination. If Beatty were to launch such a campaign, it could wreak havoc with the plans of the two declared Democratic candidates, Vice President Al Gore and former Sen. Bill Bradley, especially in California. </Abstract>
+      <StoryLink>http://www.msnbc.com/msn/303675.asp</StoryLink>
+      <Category>Politics</Category>
+      <DateTimePosted Day="22" Month="8" Year="99" Hour="17" Minute="40" Second="12"/>
+      <Author>
+         <Name>Tom Curry</Name>
+         <Affiliation>MSNBC</Affiliation>
+      </Author>
+   </Headline>
+   <Headline ID="100004" HotStory="n">
+      <Title>Scanning for trouble</Title>
+      <Subtitle>Relentless computer 'probes' cause concern, but no damage - yet</Subtitle>
+      <Abstract>Aug. 23 -  Dragos Ruiu was just minding his own business, a Vancouver software start-up, when it started. Day after day, relentlessly, someone or some group out there on the Internet is banging away at his servers, sneaking in and gaining full access. A security expert, he knows what's happening: He's being probed. Is this mere sport, or a "casing," like a bank robber who visits the bank several times to study its security systems before the heist?</Abstract>
+      <StoryLink>http://www.msnbc.com/news/302835.asp</StoryLink>
+      <PhotoLink>http://www.msnbc.com/news/427532.jpg</PhotoLink>
+      <Category>Internet</Category>
+      <DateTimePosted Day="23" Month="8" Year="99" Hour="15" Minute="54" Second="45"/>
+      <Author>
+         <Name>Bob Sullivan</Name>
+         <Affiliation>MSNBC</Affiliation>
+      </Author>
+   </Headline>
+   <Headline ID="100005" HotStory="n">
+      <Title>Police want Rodman charged</Title>
+      <Subtitle>Officer says NBA star was first asked to leave, refused</Subtitle>
+      <Abstract>NEWPORT BEACH, Calif., Aug. 23 - Police want the district attorney's office to file misdemeanor public drunkenness charges against former NBA star Dennis Rodman for his role in a disturbance at a waterfront restaurant and bar.</Abstract>
+      <StoryLink>http://www.msnbc.com/news/303850.asp</StoryLink>
+      <Category>Sports</Category>
+      <DateTimePosted Day="21" Month="8" Year="99" Hour="12" Minute="33" Second="45"/>
+      <Author>
+         <Name>Joe Smith</Name>
+         <Affiliation>Associated Press</Affiliation>
+      </Author>
+   </Headline>
+   <Headline ID="100006" HotStory="y">
+      <Title>Would drug use disqualify Bush? </Title>
+      <Subtitle>It doesn't keep applicants for top federal jobs from being hired    </Subtitle>
+      <Abstract>WASHINGTON, D.C., August 19 -  If Republican presidential candidate George W. Bush admits he has used drugs in the past, should that disqualify him for the presidency? While nominees for other top government jobs are always asked about drug use, answering yes doesn't always mean they won't get hired.</Abstract>
+      <StoryLink>http://www.msnbc.com/news/302535.asp</StoryLink>
+      <PhotoLink>http://www.msnbc.com/news/425725.jpg</PhotoLink>
+      <Category>Politics</Category>
+      <DateTimePosted Day="23" Month="8" Year="99" Hour="18" Minute="28" Second="10"/>
+      <Author>
+         <Name>David Bloom</Name>
+         <Affiliation>MSNBC</Affiliation>
+      </Author>
+   </Headline>
+</Headlines>

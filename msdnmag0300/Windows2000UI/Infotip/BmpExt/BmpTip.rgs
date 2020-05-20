@@ -1,0 +1,58 @@
+HKCR
+{
+	BmpExt.BmpTip.1 = s 'BmpTip Class'
+	{
+		CLSID = s '{7BEA1DD1-1EB9-11D3-B17C-00C0DFE39736}'
+	}
+	BmpExt.BmpTip = s 'BmpTip Class'
+	{
+		CLSID = s '{7BEA1DD1-1EB9-11D3-B17C-00C0DFE39736}'
+		CurVer = s 'BmpExt.BmpTip.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {7BEA1DD1-1EB9-11D3-B17C-00C0DFE39736} = s 'BmpTip Class'
+		{
+			ProgID = s 'BmpExt.BmpTip.1'
+			VersionIndependentProgID = s 'BmpExt.BmpTip'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7BEA1DC4-1EB9-11D3-B17C-00C0DFE39736}'
+		}
+	}
+
+	.BMP
+	{
+		ShellEx
+		{	
+			ForceRemove '{00021500-0000-0000-C000-000000000046}' = s '{7BEA1DD1-1EB9-11D3-B17C-00C0DFE39736}'
+		}
+	}
+}
+
+HKLM 
+{ 
+  Software 
+  { 
+    Microsoft 
+	{ 
+	   Windows 
+	    { 
+		  CurrentVersion 
+		    {
+			  Shell Extensions
+			    {
+				  Approved
+				  {
+					ForceRemove '{7BEA1DD1-1EB9-11D3-B17C-00C0DFE39736}' = s 'Bitmap information'
+				  }
+		        }
+
+			}
+		}
+	}
+  }
+}

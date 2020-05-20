@@ -1,0 +1,62 @@
+<html>
+
+<head>
+<script TYPE="text/javascript" LANGUAGE="javascript" SRC="../script/xsl.js"></script>
+
+<object id="VMLRender" classid="CLSID:10072CEC-8CC1-11D1-986E-00A0C955B42E">
+</object>
+
+<style>v\:*         { behavior: url(#VMLRender) }
+.clsOperation
+{
+    COLOR: purple;
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: bolder;
+    TEXT-DECORATION: underline;
+    CURSOR: hand
+}
+.clsOneDeep
+{
+    CURSOR: hand
+}
+</style>
+
+</head>
+
+<body language="javascript" onload="return window_onload()">
+
+<div id="header" >
+      <!-- resulting header will be inserted here -->
+</div>
+<TABLE>
+<TR>
+<TD><INPUT id=chkCertification type=checkbox>Certification(s)<BR>
+<INPUT id=txtCertification></TD> 
+<TD valign=top><INPUT id=chkDegree type=checkbox>Degree(s)<BR>
+<INPUT id=txtDegree></TD> 
+<TD valign=top><INPUT id=chkPublication type=checkbox>Publication(s)<BR>
+<INPUT id=txtPublication></TD></TR>
+<TR>
+<TD colspan=3 valign=top><INPUT id=chkManual type=checkbox>Direct<BR>
+<INPUT id=txtManual size=75 ondragenter="event.returnValue=false;event.dataTransfer.dropEffect = 'none';"></TD> 
+<TD><INPUT id=cmdSearch type=button value=Search onclick="cmdSearch_onclick()" accessKey=S>&nbsp;</TD> 
+</TR>
+</TABLE>
+All 'direct' XSL pattern must begin with //PERSON.<br>
+<div id="orgchart" >
+      <!-- resulting orgchart will be inserted here -->
+</div>
+<div id="companyinfo" >
+      <!-- resulting companyinfo will be inserted here -->
+</div>
+<div id="xsldebug" >
+
+</div>
+	<xml id="infoxml"></xml>
+	<xml id="orgchartxsl"></xml>
+	<xml id="companyinfoxsl"></xml>
+    <BUTTON ID="Save" onclick="SaveXML()">Save</BUTTON> 
+	
+</body>
+
+</html>

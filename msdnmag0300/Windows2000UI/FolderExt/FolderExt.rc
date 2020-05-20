@@ -1,0 +1,194 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""FolderExt.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FolderExt Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FolderExt\0"
+            VALUE "LegalCopyright", "Copyright 1999\0"
+            VALUE "OriginalFilename", "FolderExt.DLL\0"
+            VALUE "ProductName", "FolderExt Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_PROPERTY            REGISTRY DISCARDABLE    "Property.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOMIZEFOLDER DIALOG DISCARDABLE  0, 0, 272, 208
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEXT,7,35,258,32,ES_MULTILINE | ES_WANTRETURN
+    EDITTEXT        IDC_ICONFILE,40,116,219,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Change Icon...",IDC_CHANGEICON,181,135,77,16
+    PUSHBUTTON      "Set Customization",IDC_CUSTOMIZE,7,174,84,18
+    PUSHBUTTON      "Remove Customization",IDC_REMOVE,97,174,84,18
+    LTEXT           "Folder comment:",IDC_STATIC,7,25,190,10
+    LTEXT           "Note:    This comment can be text-only. No HTML tags can be specified. The text entered will be displayed in the Explorer's right pane when the folder is selected.",
+                    IDC_STATIC,7,74,258,18
+    LTEXT           "",IDC_FOLDERNAME,7,7,258,12
+    GROUPBOX        "Folder Icon",IDC_STATIC,7,99,258,59
+    ICON            "",IDC_FOLDERICON,14,113,20,20
+END
+
+IDD_NEWFOLDERDLG DIALOG DISCARDABLE  0, 0, 244, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Creating a new folder..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NEWFOLDER,5,65,232,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,187,7,50,14
+    PUSHBUTTON      "Cancel",2,187,24,50,14
+    LTEXT           "Current folder:",IDC_STATIC,6,8,151,9
+    LTEXT           "",IDC_CURFOLDER,7,20,171,37
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CUSTOMIZEFOLDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_NEWFOLDERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NEWFOLDER           BITMAP  DISCARDABLE     "folder.bmp"
+IDB_PROMPT              BITMAP  DISCARDABLE     "msdos.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "FolderExt"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "FolderExt.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
