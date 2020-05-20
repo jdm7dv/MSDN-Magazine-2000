@@ -1,0 +1,84 @@
+<HTML>
+
+<HEAD>
+<BASE url="res://AboutHtml.exe/about.htm">
+<TITLE>CHtmlCtrl About Page</TITLE>
+<META http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">
+<BGSOUND loop="1" src="mozart.wav">
+</HEAD>
+
+<STYLE>A:hover { color:#FF00C0 }</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+	var okImages = new Array(2);
+	okImages[0]  = new Image();
+	okImages[1]  = new Image();
+	okImages[0].src = "okup.gif";
+	okImages[1].src = "okdn.gif";
+	function OnClickOK(bDown) {
+		okImage.src = okImages[bDown].src;	
+	}
+</SCRIPT>
+
+<BODY scroll=no link="#02B7B7" vlink="#02B7B7">
+
+<TABLE border="0" width="100%" cellspacing="0" cellpadding="0">
+
+<TR><TD width="15%" valign="top">
+<a target="newwin" href="http://pobox.com/~askpd">
+<img src="pd.jpg" border="0" alt="Yours Truly" width="83" height="90">
+</a></TD>
+<TD width="85%" valign="top">
+<p align=right><FONT size=1><B>HTMLCTRL</b>Copyright 1999<br>
+<a target="newwin" href="http://microsoft.com/msj">Microsoft 
+Systems Journal</a><br>
+Written by <a target="newwin" href="http://pobox.com/~askpd">Paul DiLascia</a>
+</FONT></TD>
+</TR>
+
+<TR>
+<TD width="100%" colspan="2"><br>
+<FONT size=1>This program shows how to implement a new class,
+<b>CHtmlCtrl</b>, derived from <b>CHtmlView</b> with minor modifications, to
+implement web pages you can embed in dialogs such as this About box. It also
+shows how to embed HTML files as resources within your EXE or DLL. You can
+read all about it in my C++ Q&amp;A column in the December, 1999 issue (last
+pre-millennium) of <a href="http://microsoft.com/msj" target="newwin">MSJ</a>.
+<P>
+You might think this is frivolous, but actually it's way cool! You can even
+write some <b>JavaScript</b> or <b>DHTML</b> to do animations--HTML is just
+the ticket for implementing late-nite EXE easter eggs.
+</FONT>
+</TD>
+</TR>
+
+<TR>
+<TD width="100%" colspan="2"><br>
+<b><SMALL><a target="newwin" href="http://www.webpagesthatsuck.com"><marquee
+border="2" style="color: rgb(2,183,183); text-decoration: none; font-family:
+Tahoma" bgcolor="#E2FCFC" scrollamount="3" scrolldelay="60" width="100%"
+height="13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marquees
+like this are really grody....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click to find out why...
+</marquee></a></SMALL></b>
+</TD>
+</TR>
+<TR>
+<TD colspan=2 align=right>
+<BR>
+<a onMouseDown="OnClickOK(1);"
+	onMouseUp="OnClickOK(0);" 
+	onMouseOut="OnClickOK(0);" href="app:ok">
+<img name="okImage" src="okup.gif" align="right" border="0" width="80"
+height="20"></a>
+</TD>
+</TR>
+
+</TABLE>
+</BODY>
+</HTML>

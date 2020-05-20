@@ -1,0 +1,25 @@
+# Microsoft Developer Studio Generated Dependency File, included by AboutHtml.mak
+
+.\AboutHtml.cpp : \
+	".\htmlctrl.h"\
+	".\tracewin.h"\
+	
+
+.\AboutHtml.rc : \
+	".\Res\about.htm"\
+	".\res\app.ico"\
+	".\res\app.rc2"\
+	".\Res\mozart.wav"\
+	".\Res\okdn.gif"\
+	".\Res\okup.gif"\
+	".\Res\pd.jpg"\
+	".\res\Toolbar.bmp"\
+	
+
+.\HtmlCtrl.cpp : \
+	".\htmlctrl.h"\
+	
+
+.\StdAfx.cpp : \
+	".\stdafx.h"\
+	
