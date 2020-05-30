@@ -1,0 +1,32 @@
+# Microsoft Developer Studio Generated Dependency File, included by mypanel.mak
+
+.\cpanel.cpp : \
+	".\cpanel.h"\
+	".\debug.h"\
+	
+
+.\Debug.cpp : \
+	".\debug.h"\
+	".\tracewin.h"\
+	
+
+.\mypanel.cpp : \
+	".\cpanel.h"\
+	".\debug.h"\
+	".\statlink.h"\
+	
+
+.\mypanel.rc : \
+	".\res\app.rc2"\
+	".\Res\app1.ico"\
+	".\Res\app2.ico"\
+	
+
+.\StatLink.cpp : \
+	".\statlink.h"\
+	
+
+.\StdAfx.cpp : \
+	".\stdafx.h"\
+	"d:\msdev\vc98\include\basetsd.h"\
+	

@@ -1,0 +1,25 @@
+HKCR
+{
+	CallObjectServer.CallNotifyObject.1 = s 'CallNotifyObject Class'
+	{
+		CLSID = s '{3DE3FDA5-A785-423C-84A5-45A12A15FCBD}'
+	}
+	CallObjectServer.CallNotifyObject = s 'CallNotifyObject Class'
+	{
+		CLSID = s '{3DE3FDA5-A785-423C-84A5-45A12A15FCBD}'
+		CurVer = s 'CallObjectServer.CallNotifyObject.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3DE3FDA5-A785-423C-84A5-45A12A15FCBD} = s 'CallNotifyObject Class'
+		{
+			ProgID = s 'CallObjectServer.CallNotifyObject.1'
+			VersionIndependentProgID = s 'CallObjectServer.CallNotifyObject'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{A6F81835-1098-4123-AB27-22F98EAB8F05}'
+		}
+	}
+}

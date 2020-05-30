@@ -1,0 +1,37 @@
+﻿cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  dllreg_util.cpp
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_util.h(17): warning C4005: 'ARRAYSIZE': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1243): note: see previous definition of 'ARRAYSIZE'
+  dllreg_job.cpp
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_util.h(17): warning C4005: 'ARRAYSIZE': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1243): note: see previous definition of 'ARRAYSIZE'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_job.cpp(109): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_job.cpp(116): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_job.cpp(121): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_job.cpp(132): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_job.cpp(135): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  dllreg_ctxm.cpp
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_util.h(17): warning C4005: 'ARRAYSIZE': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1243): note: see previous definition of 'ARRAYSIZE'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_ctxm.cpp(43): warning C4459: declaration of 'hSubMenu' hides global declaration
+  d:\wrk\msdn\2000\shell extenstions\com\dllreg_ctxm.cpp(12): note: see declaration of 'hSubMenu'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_ctxm.cpp(101): error C2082: redefinition of formal parameter 'pszName'
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_ctxm.cpp(121): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(117): note: see declaration of 'wcscpy'
+  dllregshex.cpp
+d:\wrk\msdn\2000\shell extenstions\com\dllreg_util.h(17): warning C4005: 'ARRAYSIZE': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1243): note: see previous definition of 'ARRAYSIZE'
+d:\wrk\msdn\2000\shell extenstions\com\dllregshex.cpp(183): warning C4996: 'GetVersionExA': was declared deprecated
+  c:\program files (x86)\windows kits\8.1\include\um\sysinfoapi.h(433): note: see declaration of 'GetVersionExA'
+d:\wrk\msdn\2000\shell extenstions\com\dllregshex.cpp(285): warning C4996: 'GetVersionExA': was declared deprecated
+  c:\program files (x86)\windows kits\8.1\include\um\sysinfoapi.h(433): note: see declaration of 'GetVersionExA'
+d:\wrk\msdn\2000\shell extenstions\com\dllregshex.cpp(402): error C2259: 'CShellExt': cannot instantiate abstract class
+  d:\wrk\msdn\2000\shell extenstions\com\dllregshex.cpp(402): note: due to following members:
+  d:\wrk\msdn\2000\shell extenstions\com\dllregshex.cpp(402): note: 'HRESULT IContextMenu::GetCommandString(UINT_PTR,UINT,UINT *,CHAR *,UINT)': is abstract
+  c:\program files (x86)\windows kits\8.1\include\um\shobjidl.h(2767): note: see declaration of 'IContextMenu::GetCommandString'
+  Generating Code...

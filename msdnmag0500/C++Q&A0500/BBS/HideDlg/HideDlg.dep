@@ -1,0 +1,15 @@
+# Microsoft Developer Studio Generated Dependency File, included by hidedlg.mak
+
+.\hidedlg.cpp : \
+	".\tracewin.h"\
+	
+
+.\hidedlg.rc : \
+	".\res\app.ico"\
+	".\res\app.rc2"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"d:\msdev\vc98\include\basetsd.h"\
+	

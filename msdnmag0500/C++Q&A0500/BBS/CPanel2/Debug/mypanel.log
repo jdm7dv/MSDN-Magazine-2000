@@ -1,0 +1,21 @@
+﻿cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  StatLink.cpp
+d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\statlink.cpp(24): error C2440: 'static_cast': cannot convert from 'UINT (__thiscall CStaticLink::* )(CPoint)' to 'LRESULT (__thiscall CWnd::* )(CPoint)'
+  d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\statlink.cpp(24): note: Cast from base to derived requires dynamic_cast or static_cast
+d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\statlink.cpp(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  mypanel.cpp
+  Debug.cpp
+d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\debug.cpp(54): error C2065: 'traceMultiApp': undeclared identifier
+d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\debug.cpp(44): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+  cpanel.cpp
+d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\cpanel.cpp(208): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\cpanel.cpp(209): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+d:\wrk\msdn\2000\msdnmag0500\c++q&a0500\bbs\cpanel2\cpanel.cpp(210): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  Generating Code...

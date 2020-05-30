@@ -1,0 +1,43 @@
+// CallObjectServer.idl : IDL source for CallObjectServer.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (CallObjectServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(D38F681D-307F-4559-96C8-FF8B759712A9),
+		helpstring("ICallObjectInit Interface"),
+		pointer_default(unique)
+	]
+	interface ICallObjectInit : IUnknown
+	{
+		[helpstring("method Initialize")]
+		HRESULT Initialize([in] unsigned int hWnd,
+		[in] unsigned int nMessageID, [in] ICallFactory* pCallFactory,
+		[in] REFIID riid1, [in] REFIID riid2,
+		[out, iid_is (riid2)] void** ppvObj);
+	};
+
+[
+	uuid(A6F81835-1098-4123-AB27-22F98EAB8F05),
+	version(1.0),
+	helpstring("CallObjectServer 1.0 Type Library")
+]
+library CALLOBJECTSERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(3DE3FDA5-A785-423C-84A5-45A12A15FCBD),
+		helpstring("CallNotifyObject Class")
+	]
+	coclass CallNotifyObject
+	{
+		[default] interface ICallObjectInit;
+		interface ISynchronize;
+	};
+};

@@ -93,12 +93,12 @@ CShellExt::InvokeCommand(LPCMINVOKECOMMANDINFO lpcmi)
 }
 
 STDMETHODIMP 
-CShellExt::GetCommandString(UINT idCmd, UINT uFlags, UINT FAR *reserved, LPSTR pszName, UINT cchMax)
+CShellExt::GetCommandString(UINT idCmd, UINT uFlags, UINT FAR *reserved, LPWSTR pszName, UINT cchMax)
 {
 	_UNUSED_PARAMETER(reserved);
 	_UNUSED_PARAMETER(uFlags);
-
-	*pszName = 0;
+	 
+	unsigned short *pszName = 0;
 
 	cchMax   = 40;
 	char psz[40];
@@ -118,7 +118,7 @@ CShellExt::GetCommandString(UINT idCmd, UINT uFlags, UINT FAR *reserved, LPSTR p
 			break;
     }
 
-	wcscpy((unsigned short *)pszName, _WCSTR(psz));
+	wcscpy(pszName, _WCSTR(psz));
     return NOERROR;
 }
 

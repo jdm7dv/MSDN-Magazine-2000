@@ -1,0 +1,6 @@
+LIBRARY      "MYPANEL"
+DESCRIPTION  'My Control Panel Applet'
+EXPORTS
+    ; Explicit exports can go here
+	 CPlApplet PRIVATE
+

@@ -1,0 +1,6 @@
+
+LIBRARY	     "simpleisapi"
+
+EXPORTS
+	HttpExtensionProc
+	GetExtensionVersion
